@@ -1,0 +1,8 @@
+/* TEAM */
+	Developer: Cole Geissinger
+	Contact:   cole@beawimp.org
+	URI:       http://colegeissinger.com
+
+	Designer: Melissa Geissinger
+	Contact:  melissa@beawimp.org
+	URI:      http://newskinmedia.com
