@@ -1,1 +1,7 @@
 node_modules
+.gruntjshintrc
+.jshintrc
+.sass-cache/*
+assets/css/README.md
+assets/js/vendor/README.md
+images/README.md
