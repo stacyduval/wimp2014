@@ -18,9 +18,16 @@ module.exports = function( grunt ) {
 			},
 			wimp: {
 				src: [
-					'assets/js/src/wimp.js'
+					'assets/js/src/**/*.js',
+					'!assets/js/src/admin'
 				],
 				dest: 'assets/js/wimp.js'
+			},
+			admin: {
+				src: [
+					'assets/js/src/admin/**/*.js'
+				],
+				dest: 'assets/js/wimp.admin.js'
 			}
 		},
 		jshint: {
@@ -45,7 +52,8 @@ module.exports = function( grunt ) {
 		uglify: {
 			all: {
 				files: {
-					'assets/js/wimp.min.js': ['assets/js/wimp.js']
+					'assets/js/wimp.min.js': ['assets/js/wimp.js'],
+					'assets/js/wimp.admin.min.js': ['assets/js/wimp.admin.js']
 				},
 				options: {
 					banner: '/*! <%= pkg.title %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
