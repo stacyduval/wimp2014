@@ -12,6 +12,13 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
+// Useful global constants
+define( 'WIMP_VERSION', '0.0.1' );
+define( 'WIMP_URL',     get_template_directory_uri() . '/' );
+define( 'WIMP_PATH',    dirname( __FILE__ ) . '/' );
+define( 'WIMP_INC',     WIMP_PATH . 'includes/' );
+define( 'WIMP_ASSETS',  WIMP_URL . 'assets/' );
+
 if ( ! function_exists( 'wimp_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -28,7 +35,7 @@ function wimp_setup() {
 	 * If you're building a theme based on wimp, use a find and replace
 	 * to change 'wimp' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'wimp', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'wimp', WIMP_URL . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
