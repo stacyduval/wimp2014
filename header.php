@@ -42,14 +42,17 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html( bloginfo( 'name' ) ); ?></a></h1>
-			<h2 class="site-description"><?php esc_html( bloginfo( 'description' ) ); ?></h2>
+			<h1 class="site-title"><a class="hide-text" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html( bloginfo( 'name' ) ); ?></a></h1>
+			
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="wrap">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'wimp' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+		

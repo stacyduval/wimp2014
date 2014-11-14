@@ -103,6 +103,9 @@ function wimp_scripts( $debug ) {
 
 	// Styles
 	wp_enqueue_style( 'wimp-style', WIMP_ASSETS . "css/wimp{$min}.css", array(), WIMP_VERSION );
+	
+	// Styles
+	wp_enqueue_style( 'stacy-style', WIMP_ASSETS . "css/stacy{$min}.css", array(), WIMP_VERSION );
 
 	// Scripts
 	wp_enqueue_script( 'wimp-scripts', WIMP_ASSETS . "js/wimp{$min}.js", array(), WIMP_VERSION, true );
